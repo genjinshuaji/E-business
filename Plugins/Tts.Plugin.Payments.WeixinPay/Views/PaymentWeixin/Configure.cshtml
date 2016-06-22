@@ -1,0 +1,82 @@
+﻿@{
+    Layout = "";
+}
+@model ConfigurationModel
+@using Tts.Plugin.Payments.WeixinPay.Models;
+@using Nop.Web.Framework;
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <table class="adminContent">
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.Email):
+            </td>
+            <td class="adminData">
+                @Html.EditorFor(model => model.Email)
+                @Html.ValidationMessageFor(model => model.Email)
+            </td>
+        </tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.Password):
+            </td>
+            <td class="adminData">
+                @Html.EditorFor(model => model.Password)
+                @Html.ValidationMessageFor(model => model.Password)
+            </td>
+        </tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.AppId):
+            </td>
+            <td class="adminData">
+                @Html.EditorFor(model => model.AppId)
+                @Html.ValidationMessageFor(model => model.AppId)
+            </td>
+        </tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.AppSecret):
+            </td>
+            <td class="adminData">
+                @Html.EditorFor(model => model.AppSecret)
+                @Html.ValidationMessageFor(model => model.AppSecret)
+            </td>
+        </tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.Mchid):
+            </td>
+            <td class="adminData">
+                @Html.EditorFor(model => model.Mchid)
+                @Html.ValidationMessageFor(model => model.Mchid)
+            </td>
+        </tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.ApiSecret):
+            </td>
+            <td class="adminData">
+                @Html.EditorFor(model => model.ApiSecret)
+                @Html.ValidationMessageFor(model => model.ApiSecret)
+            </td>
+        </tr>
+        <tr>
+            <td class="adminTitle">
+                @Html.NopLabelFor(model => model.AdditionalFee):
+            </td>
+            <td class="adminData">
+                @Html.EditorFor(model => model.AdditionalFee)
+                @Html.ValidationMessageFor(model => model.AdditionalFee)
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit" name="save" value="save" class="k-button">
+                    保存</button>
+            </td>
+        </tr>
+    </table>
+    
+}

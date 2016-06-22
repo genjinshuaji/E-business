@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/Views/Shared/_ColumnsOne.cshtml";
+    //微信扫码支付
+
+}
+@using Nop.Web.Framework.UI
+@model Tts.Plugin.Payments.WeixinPay.Models.NativePayModel
+<link href="~/plugins/Payments.WeixinPay/content/style.css" rel="stylesheet" />
+<ul class="wx-detail">
+    <li>订单编号：@Model.OrderNo</li>
+    <li>应付金额：<span>@Model.OrderTotal</span> </li>
+</ul>
+<div class="wx-logo">
+    <img src="/plugins/Payments.WeixinPay/Content/images/WePayLogo.png"/>
+</div>
+<div class="wx-qrcode">
+    <img alt="" src="data:image/jpg;base64,@Model.QrCodeBase64String"/>
+</div>
+<div class="wx-show">
+    <img src="/plugins/Payments.WeixinPay/Content/images/textshow.png" />
+</div>

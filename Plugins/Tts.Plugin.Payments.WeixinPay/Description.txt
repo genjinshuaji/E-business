@@ -1,0 +1,8 @@
+﻿Group: _TTS
+FriendlyName: 微信支付
+SystemName: Payments.WeixinPay
+Version: 1.00
+SupportedVersions: 3.70
+Author: 畅途网
+DisplayOrder: 1
+FileName: Tts.Plugin.Payments.WeixinPay.dll

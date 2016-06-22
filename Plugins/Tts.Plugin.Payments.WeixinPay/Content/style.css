@@ -1,0 +1,32 @@
+.wx-detail {
+    background-color: #f0f0f0;
+    padding: 15px 5px;
+    font-family: Î¢ÈíÑÅºÚ;
+}
+.wx-detail li {
+    margin-top: 10px;
+}
+.wx-detail li span {
+    font-size: 18px;
+    color: red;
+    font-weight: 600;
+}
+.wx-logo {
+    border: 2px solid orange;
+    padding: 5px;
+    margin: 20px 0 10px 20px
+}
+.wx-logo  img {
+    height: 50px;
+}
+.wx-qrcode {
+        margin-left: 20px
+}
+.wx-qrcode img {
+    width: 150px;
+    height: 150px;
+}
+.wx-show {
+    margin: 10px 20px
+}
+.wx-show img{}
